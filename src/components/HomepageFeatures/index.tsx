@@ -10,32 +10,31 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Easy to Use',
+    title: 'Protocol',
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Core protocol documentation which explains topics including: how the $1 peg is maintained, 
+        how the protocol is governed, the smart contract API and more.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
+    title: 'Turbo',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Turbo allows any token to become productive through the yield generated off a 
+        costless line of Fei credit.
       </>
     ),
   },
   {
-    title: 'Powered by React',
+    title: 'ERC-4626',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        A new token standard for yield bearing tokens. Used by projects such as x, y, z
       </>
     ),
   },

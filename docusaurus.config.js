@@ -6,15 +6,18 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
+  title: 'Fei Protocol Docs',
+  tagline: `
+  Fei Protocol is a stablecoin that is part of the Tribe ecosystem. It is pegged to $1 USD through a decentralised mechanism
+  with the ecosystem including a variety of services that use Fei: Tribe Turbo, generalised yield tokens through ERC-4626 and
+  Flywheel.`,
   url: 'https://your-docusaurus-test-site.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'fei-protocol', // Usually your GitHub org/user name.
+  projectName: 'Fei', // Usually your repo name.
 
   presets: [
     [
@@ -25,12 +28,6 @@ const config = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl: 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-        },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -43,9 +40,9 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'My Site',
+        title: 'Fei',
         logo: {
-          alt: 'My Site Logo',
+          alt: 'Fei Logo',
           src: 'img/logo.svg',
         },
         items: [
@@ -53,11 +50,13 @@ const config = {
             type: 'doc',
             docId: 'intro',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Protocol',
           },
+          { label: "Turbo", position: "left", to: "/protocol/turbo" },
+          { label: "ERC-4626", position: "left", to: "/protocol/erc4626" },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/fei-protocol',
             label: 'GitHub',
             position: 'right',
           },
@@ -79,16 +78,12 @@ const config = {
             title: 'Community',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
                 label: 'Discord',
                 href: 'https://discordapp.com/invite/docusaurus',
               },
               {
                 label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                href: 'https://twitter.com/feiprotocol',
               },
             ],
           },
@@ -101,16 +96,17 @@ const config = {
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/fei-protocol',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Fei Protocol.`,
       },
       prism: {
-        theme: lightCodeTheme,
-        darkTheme: darkCodeTheme,
+        additionalLanguages: ["solidity"],
+        darkTheme: require("prism-react-renderer/themes/dracula"),
+        theme: require("prism-react-renderer/themes/github")
       },
     }),
 };
