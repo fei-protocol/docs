@@ -50,8 +50,18 @@ const config = {
             position: 'left',
             label: 'Fei Protocol',
           },
-          { label: "Turbo", position: "left", to: "/protocol/turbo" },
-          { label: "ERC-4626", position: "left", to: "/protocol/erc4626" },
+          {
+            type: 'doc',
+            docId: 'intro',
+            position: 'left',
+            label: 'Turbo',
+          },
+          {
+            type: 'doc',
+            docId: 'intro',
+            position: 'left',
+            label: 'ERC-4626',
+          },
           {
             href: 'https://github.com/fei-protocol',
             label: 'GitHub',
