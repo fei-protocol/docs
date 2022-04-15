@@ -54,7 +54,6 @@ const config = {
           },
           { label: "Turbo", position: "left", to: "/protocol/turbo" },
           { label: "ERC-4626", position: "left", to: "/protocol/erc4626" },
-          {to: '/blog', label: 'Blog', position: 'left'},
           {
             href: 'https://github.com/fei-protocol',
             label: 'GitHub',
@@ -66,20 +65,11 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
-            items: [
-              {
-                label: 'Tutorial',
-                to: '/docs/intro',
-              },
-            ],
-          },
-          {
             title: 'Community',
             items: [
               {
                 label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                href: 'http://discord.gg/TeJFhrajSv',
               },
               {
                 label: 'Twitter',
@@ -92,7 +82,7 @@ const config = {
             items: [
               {
                 label: 'Blog',
-                to: '/blog',
+                href: 'https://medium.com/fei-protocol'
               },
               {
                 label: 'GitHub',
