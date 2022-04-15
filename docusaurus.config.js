@@ -6,18 +6,16 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Fei Protocol Docs',
+  title: 'Tribe DAO Documentation',
   tagline: `
-  Fei Protocol is a stablecoin that is part of the Tribe ecosystem. It is pegged to $1 USD through a decentralised mechanism
-  with the ecosystem including a variety of services that use Fei: Tribe Turbo, generalised yield tokens through ERC-4626 and
-  Flywheel.`,
+  Tribe DAO is community and ecosystem of decentralised finance protocols and products`,
   url: 'https://your-docusaurus-test-site.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'fei-protocol', // Usually your GitHub org/user name.
-  projectName: 'Fei', // Usually your repo name.
+  organizationName: 'Tribe DAO', // Usually your GitHub org/user name.
+  projectName: 'Tribe DAO', // Usually your repo name.
 
   presets: [
     [
@@ -40,9 +38,9 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'Fei',
+        title: 'Tribe DAO',
         logo: {
-          alt: 'Fei Logo',
+          alt: 'Tribe logo',
           src: 'img/logo.svg',
         },
         items: [
@@ -50,7 +48,7 @@ const config = {
             type: 'doc',
             docId: 'intro',
             position: 'left',
-            label: 'Protocol',
+            label: 'Fei Protocol',
           },
           { label: "Turbo", position: "left", to: "/protocol/turbo" },
           { label: "ERC-4626", position: "left", to: "/protocol/erc4626" },
@@ -91,7 +89,6 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Fei Protocol.`,
       },
       prism: {
         additionalLanguages: ["solidity"],

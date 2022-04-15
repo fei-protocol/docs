@@ -10,12 +10,13 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Protocol',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: 'Fei Protocol',
+    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    href: 'https://fei.org/',
     description: (
       <>
-        Core protocol documentation which explains topics including: how the $1 peg is maintained, 
-        how the protocol is governed, the smart contract API and more.
+        Fei is a stablecoin pegged to $1 USD. It powers many of the Tribe DAO's services
+        as it's liquidity engine.  
       </>
     ),
   },
@@ -34,7 +35,7 @@ const FeatureList: FeatureItem[] = [
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        A new token standard for yield bearing tokens. Used by projects such as x, y, z
+        A new token standard for yield bearing tokens. 
       </>
     ),
   },
