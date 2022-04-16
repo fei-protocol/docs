@@ -37,7 +37,8 @@ const FeatureList: FeatureItem[] = [
     Svg: ERC4626Icon,
     description: (
       <>
-        A new token standard for yield bearing tokens. 
+        A new token standard for yield bearing tokens. Streamlines different token designs
+        and facilitates strategies.
       </>
     ),
   },
