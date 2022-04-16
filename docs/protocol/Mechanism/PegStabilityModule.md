@@ -1,7 +1,7 @@
 ---
 sidebar_position: 2
 ---
-
+# Peg stability module
 The Peg Stability Module (PSM) is responsible for helping the FEI protocol keep its peg at $1. The PSM is a stability mechanism, that is used to bring other existing liquidity venues back to the peg.
 
 The FEI PSM is a contract which holds a reserve of assets in order to exchange FEI at $1 of other assets with a fee. There are two allowed actions `mint()` - buy FEI for $1 of assets plus a fee and `redeem()` - sell FEI back for $1 of assets, minus a fee. The current PSM's external asset is DAI so on mint, a user provides DAI, and the protocol gives FEI. On redeem, the user provides FEI, and receives DAI.

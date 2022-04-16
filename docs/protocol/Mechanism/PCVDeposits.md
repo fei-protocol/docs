@@ -2,11 +2,12 @@
 sidebar_position: 2
 ---
 
+# PCV Deposits
 The PCV Deposit is a standard interface implemented across the FEI protocol codebase.
 
-A PCV Deposit is a contract that hold funds on behalf of the protocol. There are multiple types (implementations) of PCV Deposits, and each type of PCV Deposit can be instanciated multiple times on-chain. Collectively, all the funds deposited across various PCV Deposits constitute the [Protocol Controlled Value](PCVManagement.md).
+A PCV Deposit is a contract that hold funds on behalf of the protocol. There are multiple types (implementations) of PCV Deposits, and each type of PCV Deposit can be instanciated multiple times on-chain. Collectively, all the funds deposited across various PCV Deposits constitute the Protocol Controlled Value.
 
-For instance, an `ERC20CompoundPCVDeposit` ([link]([aaaa](https://github.com/fei-protocol/fei-protocol-core/blob/develop/contracts/pcv/compound/ERC20CompoundPCVDeposit.sol))) can deposit and withdraw a given `token` to and from a given `cToken` (Compound protocol interest-bearing deposit token). There are multiple on-chain deployments of the `ERC20CompoundPCVDeposit`, such as the DAI Compound PCVDeposit, that deposits DAI on Compound, or the FEI Fuse Pool 8 PCVDeposit, that deposits FEI in Fuse pool 8.
+For instance, an `ERC20CompoundPCVDeposit` ([link](https://github.com/fei-protocol/fei-protocol-core/blob/develop/contracts/pcv/compound/ERC20CompoundPCVDeposit.sol)) can deposit and withdraw a given `token` to and from a given `cToken` (Compound protocol interest-bearing deposit token). There are multiple on-chain deployments of the `ERC20CompoundPCVDeposit`, such as the DAI Compound PCVDeposit, that deposits DAI on Compound, or the FEI Fuse Pool 8 PCVDeposit, that deposits FEI in Fuse pool 8.
 
 A PCV Deposit manages only one type of token, and if additional tokens are available on the deposit (e.g. COMP rewards earned by the DAI Compound PCVDeposit), they are ignored in accounting and can't be used, so should probably be moved somewhere else.
 
@@ -30,7 +31,7 @@ function withdrawETH(address payable to, uint256 amount) external;
 
 **Accounting**
 
-The methods `balanceReportedIn()`, `balance()`, and `resistantBalanceAndFei()` are used for accounting and compatibility. These `view` methods are used in the [Collateralization](Collateralization.md) Oracle to determine the aggregated amount of PCV and FEI the protocol controls.
+The methods `balanceReportedIn()`, `balance()`, and `resistantBalanceAndFei()` are used for accounting and compatibility. These `view` methods are used in the Collateralization Oracle to determine the aggregated amount of PCV and FEI the protocol controls.
 
 `balanceReportedIn()` is the address of the token managed & reported by a deposit.
 
@@ -42,13 +43,13 @@ The methods `balanceReportedIn()`, `balance()`, and `resistantBalanceAndFei()` a
 
 The `deposit()` method is called after tokens have been sent to the PCV Deposit to deploy those tokens into the "strategy" implemented by the contract.
 
-The `withdraw()` method is called by a [PCV Controller](AccessControl.md) to withdraw tokens from the "strategy" implemented by the contract.
+The `withdraw()` method is called by a PCV Controller to withdraw tokens from the "strategy" implemented by the contract.
 
 The `withdrawERC20()` method is called by a PCV Controller to withdraw ERC20 tokens held in the PCV Deposit.
 
 **Movements**
 
-The `withdrawETH()` and `withdrawERC20()` methods are called by a [PCV Controller](AccessControl.md) to send the ETH and ERC20 held on the PCV Deposit somewhere else. 
+The `withdrawETH()` and `withdrawERC20()` methods are called by a PCV Controller to send the ETH and ERC20 held on the PCV Deposit somewhere else. 
 
 These methods can move any tokens, and not just the token used in accounting by the PCV Deposit, so they can be used for instance to move rewards earned by the contract (e.g. CRV and CVX earned by a Convex PCVDeposit).
 

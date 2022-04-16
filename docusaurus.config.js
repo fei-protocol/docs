@@ -14,8 +14,10 @@ const config = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'Tribe DAO', // Usually your GitHub org/user name.
-  projectName: 'Tribe DAO', // Usually your repo name.
+  organizationName: 'fei-protocol', // Usually your GitHub org/user name.
+  projectName: 'docs', // Usually your repo name.
+  deploymentBranch: 'master',
+  trailingSlash: false,
 
   presets: [
     [
