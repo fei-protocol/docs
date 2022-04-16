@@ -8,10 +8,10 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'Tribe DAO Documentation',
   tagline: `
-  Tribe DAO is community and ecosystem of decentralised finance protocols and products`,
+  Tribe DAO is a community and ecosystem of decentralised finance protocols and products`,
   url: 'https://your-docusaurus-test-site.com',
-  baseUrl: '/',
-  onBrokenLinks: 'throw',
+  baseUrl: '/docs/',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'fei-protocol', // Usually your GitHub org/user name.
