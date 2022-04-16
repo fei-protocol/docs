@@ -1,6 +1,9 @@
 import React from 'react';
 import clsx from 'clsx';
 import styles from './styles.module.css';
+import FeiIcon from '../../icons/FeiIcon';
+import TurboIcon from '../../icons/TurboIcon';
+import ERC4626Icon from '../../icons/ERC4626Icon';
 
 type FeatureItem = {
   title: string;
@@ -11,8 +14,7 @@ type FeatureItem = {
 const FeatureList: FeatureItem[] = [
   {
     title: 'Fei Protocol',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
-    href: 'https://fei.org/',
+    Svg: FeiIcon,
     description: (
       <>
         Fei is a stablecoin pegged to $1 USD. It powers many of the Tribe DAO's services
@@ -22,7 +24,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: 'Turbo',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    Svg: TurboIcon,
     description: (
       <>
         Turbo allows any token to become productive through the yield generated off a 
@@ -32,7 +34,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: 'ERC-4626',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    Svg: ERC4626Icon,
     description: (
       <>
         A new token standard for yield bearing tokens. 
