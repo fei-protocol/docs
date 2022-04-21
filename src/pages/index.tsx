@@ -30,7 +30,7 @@ export default function Home(): JSX.Element {
   return (
     <Layout
       title={`${siteConfig.title}`}
-      description="Documentation for the Tribe DAO protocols">
+      description="Docs for the Tribe DAO protocols">
       <HomepageHeader />
       <main>
         <HomepageFeatures />
