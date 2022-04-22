@@ -6,7 +6,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Tribe DAO Documentation',
+  title: 'Tribe DAO Docs',
   tagline: `
   Tribe DAO is a community and ecosystem of decentralised finance protocols and products`,
   url: 'https://your-docusaurus-test-site.com',
@@ -63,6 +63,12 @@ const config = {
             docId: 'intro',
             position: 'left',
             label: 'ERC-4626',
+          },
+          {
+            type: 'doc',
+            docId: 'intro',
+            position: 'left',
+            label: 'Flywheel',
           },
           {
             href: 'https://github.com/fei-protocol',
