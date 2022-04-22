@@ -2,6 +2,8 @@
 ## About ERC-4626
 EIP-4626: The Tokenized Vault Standard is an ethereum application developer interface for building token vaults and strategies. It is meant to consolidate development efforts around “single token strategies” such as lending, yield aggregators, and single-sided staking.
 
+Full details about the ERC are available in the official spec: https://eips.ethereum.org/EIPS/eip-4626 
+
 ## ERC4626Router and Base
 ERC-4626 standardizes the interface around depositing and withdrawing tokens from strategies.
 
@@ -9,10 +11,11 @@ The ERC4626 Router is an ecosystem utility contract (like WETH) which can route 
 
 Basic supported features include:
 
-withdrawing from some Vault A and redepositing to Vault B
+- withdrawing from some Vault A and redepositing to Vault B
 wrapping and unwrapping WETH
-managing token approvals/transfers
-slippage protection
+- managing token approvals/transfers
+- slippage protection
+
 Ultimately the ERC4626 router can support an arbitrary number of withdrawals, deposits, and even distinct token types in a single call, subject to the block gas limit.
 
 The router is split between the base ERC4626RouterBase which only handles the ERC4626 mutable methods (deposit/withdraw/mint/redeem) and the main router ERC4626Router which includes support for common routing flows and max logic.
