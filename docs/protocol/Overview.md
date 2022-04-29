@@ -1,3 +1,6 @@
+---
+sidebar_position: 1
+---
 # Overview
 
 Fei Protocol's goal is to scalably issue a $1 pegged decentralized stablecoin, FEI.
