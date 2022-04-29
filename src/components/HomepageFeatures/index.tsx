@@ -37,7 +37,7 @@ const FeatureList: FeatureItem[] = [
     Svg: RariIcon,
     description: (
       <>
-        Permissionless lending and yield with Fuse and Vaults.
+        Permissionless lending and yield with Fuse and Vaults. Rari provides critical financial infrastructure to all tokens in DeFi without any gatekeeping.
       </>
     ),
   },
