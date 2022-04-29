@@ -3,7 +3,7 @@ import clsx from 'clsx';
 import styles from './styles.module.css';
 import FeiIcon from '../../icons/FeiIcon';
 import TurboIcon from '../../icons/TurboIcon';
-import ERC4626Icon from '../../icons/ERC4626Icon';
+import RariIcon from '../../icons/RariIcon';
 
 type FeatureItem = {
   title: string;
@@ -27,18 +27,17 @@ const FeatureList: FeatureItem[] = [
     Svg: TurboIcon,
     description: (
       <>
-        Turbo allows any token to become productive through the yield generated off a 
+        Turbo is a liquidity accelerator that allows any token to become productive through the yield generated off a 
         costless line of Fei credit.
       </>
     ),
   },
   {
-    title: 'ERC-4626',
-    Svg: ERC4626Icon,
+    title: 'Rari Capital',
+    Svg: RariIcon,
     description: (
       <>
-        A new token standard for yield bearing tokens. Streamlines different token designs
-        and facilitates strategies.
+        Permissionless lending and yield with Fuse and Vaults.
       </>
     ),
   },

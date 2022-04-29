@@ -24,7 +24,7 @@ The timelock contract is a standard OZ `TimelockController.sol`. It can be thoug
 It is important to note, that any proposal in the OA timelock can be vetoed by the DAO and the Security guardian. 
 
 ## Security guardian
-The security guardian is a Gnosis Safe which has critical powers to pause parts of the protocol during an emergency. It necessarily can act immediately without a timelock and is held by Fei Labs on a 3 or 7 multisig. 
+The security guardian is a Gnosis Safe which has limited security related powers to pause parts of the protocol during an emergency. It can act immediately without a timelock and is held by a 3 of 8 multisig.
 
 The guardian has a set of predefined behaviours it can act on including
 - Pausing contracts

@@ -11,6 +11,12 @@ For instance, an `ERC20CompoundPCVDeposit` ([link](https://github.com/fei-protoc
 
 A PCV Deposit manages only one type of token, and if additional tokens are available on the deposit (e.g. COMP rewards earned by the DAI Compound PCVDeposit), they are ignored in accounting and can't be used, so should probably be moved somewhere else.
 
+## Examples
+* [Lido ETH Staking](../smart-contract-api/pcv/lido/EthLidoPCVDeposit.md)
+* [Compound Lending](../smart-contract-api/pcv/compound/ERC20CompoundPCVDeposit.md)
+* [LUSD Stability Pool (via B. Protocol)](../smart-contract-api/pcv/liquity/BAMMDeposit.md)
+* [Convex LP Staking](../smart-contract-api/pcv/convex/ConvexPCVDeposit.md)
+
 ## Interface
 The following methods must be implemented on all PCV Deposits :
 

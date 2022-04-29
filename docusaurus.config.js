@@ -13,7 +13,7 @@ const config = {
   baseUrl: '/docs/',
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/Tribe.png',
   organizationName: 'fei-protocol', // Usually your GitHub org/user name.
   projectName: 'docs', // Usually your repo name.
   deploymentBranch: 'master',
@@ -43,32 +43,44 @@ const config = {
         title: 'Tribe DAO',
         logo: {
           alt: 'Tribe logo',
-          src: 'img/logo.svg',
+          src: 'img/Tribe.png',
         },
         items: [
           {
             type: 'doc',
-            docId: 'intro',
+            docId: 'protocol/Overview',
             position: 'left',
             label: 'Fei Protocol',
+            to: 'protocol/Overview'
           },
           {
             type: 'doc',
-            docId: 'intro',
+            docId: 'Turbo/Overview',
             position: 'left',
             label: 'Turbo',
+            to: 'Turbo/Overview'
           },
           {
             type: 'doc',
-            docId: 'intro',
-            position: 'left',
-            label: 'ERC-4626',
-          },
-          {
-            type: 'doc',
-            docId: 'intro',
+            docId: 'Flywheel/Overview',
             position: 'left',
             label: 'Flywheel',
+            to: 'Flywheel/Overview'
+          },
+          {
+            type: 'doc',
+            docId: 'Launch/Overview',
+            position: 'left',
+            label: 'Launch',
+            to: 'Launch/Overview'
+          },
+          {
+            label: 'Rari Capital',
+            href: 'https://docs.rari.capital/'
+          },
+          {
+            label: 'Volt Protocol',
+            href: 'https://github.com/code-423n4/2022-03-volt/blob/main/SYSTEMARCHITECTURE.md'
           },
           {
             href: 'https://github.com/fei-protocol',
