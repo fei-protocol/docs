@@ -16,7 +16,7 @@ There are 4 major roles:
 ## How they work
 Role creation is limited to the `GOVERNOR` role. Created roles are stored in the storage of `Core.sol`, and each created role is assigned an `admin` over that role.
 
-The `admin` of a role is then able to grant and revoke that role from individual addreses. The API for creating, granting and revoking roles looks like:
+The `admin` of a role is then able to grant and revoke that role from individual addresses. The API for creating, granting and revoking roles looks like:
 
 ```.sol
 core.createRole(keccak256("DUMMY_ROLE"), keccak256("GOVERN_ROLE"));
