@@ -5,7 +5,7 @@ sidebar_position: 2
 # PCV Deposits
 The PCV Deposit is a standard interface implemented across the FEI protocol codebase.
 
-A PCV Deposit is a contract that hold funds on behalf of the protocol. There are multiple types (implementations) of PCV Deposits, and each type of PCV Deposit can be instanciated multiple times on-chain. Collectively, all the funds deposited across various PCV Deposits constitute the Protocol Controlled Value.
+A PCV Deposit is a contract that hold funds on behalf of the protocol. There are multiple types (implementations) of PCV Deposits, and each type of PCV Deposit can be instantiated multiple times on-chain. Collectively, all the funds deposited across various PCV Deposits constitute the Protocol Controlled Value.
 
 For instance, an `ERC20CompoundPCVDeposit` ([link](https://github.com/fei-protocol/fei-protocol-core/blob/develop/contracts/pcv/compound/ERC20CompoundPCVDeposit.sol)) can deposit and withdraw a given `token` to and from a given `cToken` (Compound protocol interest-bearing deposit token). There are multiple on-chain deployments of the `ERC20CompoundPCVDeposit`, such as the DAI Compound PCVDeposit, that deposits DAI on Compound, or the FEI Fuse Pool 8 PCVDeposit, that deposits FEI in Fuse pool 8.
 
