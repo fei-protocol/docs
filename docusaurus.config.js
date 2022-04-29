@@ -13,7 +13,7 @@ const config = {
   baseUrl: '/docs/',
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/Tribe.png',
   organizationName: 'fei-protocol', // Usually your GitHub org/user name.
   projectName: 'docs', // Usually your repo name.
   deploymentBranch: 'master',
@@ -43,7 +43,7 @@ const config = {
         title: 'Tribe DAO',
         logo: {
           alt: 'Tribe logo',
-          src: 'img/logo.svg',
+          src: 'img/Tribe.png',
         },
         items: [
           {
