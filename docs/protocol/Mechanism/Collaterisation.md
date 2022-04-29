@@ -7,9 +7,14 @@ The Collateralization Ratio is expressed as a percentage, for instance if 100$ o
 
 The [Collateralization Oracle](https://github.com/fei-protocol/fei-protocol-core/blob/develop/contracts/oracle/collateralization/CollateralizationOracle.sol)) is a contract [deployed on-chain](https://etherscan.io/address/0xFF6f59333cfD8f4Ebc14aD0a0E181a83e655d257) that reports the list of token addresses of each asset held in the PCV `getTokensInPcv()`, and for each token address, the list of PCV Deposits that hold it `getDepositsForToken(address)`. The oracle also holds a mapping of token to oracle `tokenToOracle(address)` to know the "asset to USD" conversion for each of the PCV assets. A helper method `pcvStats()` is present and returns the PCV, user-circulating FEI (defined as FEI `totalSupply()` minus FEI held by PCV Deposits), PCV Equity (PCV minus user-circulating FEI), and a validity status.
 
-In the CR Oracle, a special token address `0x1111...` is used to represent "USD". This is used for instance for LP tokens of stableswaps (like Curve) where the amount of stablecoins owned is known, but not the percent of each of the underlying stablecoins.
+In the CR Oracle, a special token address `0x1111...1111` is used to represent "USD". This is used for instance for LP tokens of stableswaps (like Curve) where the amount of stablecoins owned is known, but not the percent of each of the underlying stablecoins.
 
 By convention, FEI deposited in lending markets is reported as both PCV asset worth 0$, and protocol-owned FEI (to be deduced from circulating supply).
 
 Reading the CR Oracle on-chain is very expensive, and should only be used in extreme situations. For instance, when Collateralization drops below 100%, the protocol can trigger backstop mechanisms to drain the amount of FEI in circulation & restore the CR above 100%.
 
+## Undercollateralization Recovery
+
+Fei Protocol can set a reserve ratio target <= 100% (currently exactly 100%). When the collateralization is below the target, the [TribeReserveStabilizer](../smart-contract-api/tribe/stabilizer/TribeReserveStabilizer.md) allows users to buy FEI at $1 for newly minted TRIBE.
+
+There is one protection in place to protect against oracle issues and short term volatility, the "oracle delay". To begin the recovery, the oracle delay countdown must first be triggered once the protocol is under the reserve ratio. This is a configurable window, currently 24 hours. If the reserve ratio goes above the target during the delay window, this process can be reset.

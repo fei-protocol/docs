@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 5
 ---
 
 Fei Protocol needs to protect against malicious actors and attack that come in multiple categories. We attempt to firewall assets from each other as best as possible, so that exploits in one area don't affect others. We also use a variety of features to pre-emptively and retractively secure assets, such as the PCV Guardian and PCV Sentinel.

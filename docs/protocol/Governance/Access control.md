@@ -25,6 +25,3 @@ core.revokeRole(keccak256("DUMMY_ROLE"), dummyAddress);
 ```
 
 This pattern is implemented using the [AccessControlEnumerable.sol](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/access/AccessControlEnumerable.sol) contract pattern from OpenZeppelin.
-
-## Contract admin
-<!-- TODO -->
