@@ -83,6 +83,10 @@ const config = {
             href: 'https://github.com/code-423n4/2022-03-volt/blob/main/SYSTEMARCHITECTURE.md'
           },
           {
+            label: 'Midas Capital',
+            href: 'https://twitter.com/MidasCapitalXYZ'
+          },
+          {
             href: 'https://github.com/fei-protocol',
             label: 'GitHub',
             position: 'right',
