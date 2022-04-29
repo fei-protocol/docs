@@ -20,21 +20,24 @@ sidebar_position: 4
 3. `TurboAdmin.execute(gibber,abi.encodeWithSignature("impoundAll(address,address)",safe,to), salt)` (get salt from tx data of 1.)
 
 ## Access Control Summary
-These are the roles which are in Tribe Turbo, their powers, and their default owners.
+These are the roles which are in Tribe Turbo, their powers, and their holders.
 
 ### GIBBER_ROLE
 HIGH CLEARANCE. capable of calling `gib` to impound collateral. 
 
+Holders:
+* gibber
+
 Powers:
 * `TurboSafe.gib`
-
-Owners:
-* gibber
     
 ### ROUTER_ROLE
 HIGH CLEARANCE. Optional module which can interact with any user's vault by default.
 
 The router itself replicates access control so that other users can't interact
+
+Holders:
+* router
 
 Powers:
 * `TurboSafe.boost`
@@ -46,20 +49,23 @@ Powers:
 * `TurboSafe.withdraw`
 * `TurboSafe.redeem`
 
-Owners:
-* router
-
 ### SAVIOR_ROLE 
 Capable of lessing any vault. Exposed on optional TurboSavior module.
+
+Holders:
+* savior
 
 Powers:
 * `TurboSafe.less`
 
-Owners:
-* savior
-
 ### TURBO_ADMIN_ROLE
 Operational admin of Turbo, can whitelist collaterals, strategies, and configure most parameters.
+
+Holders:
+* fei dao timelock
+* turbo pod if [FIP-82](https://tribe.fei.money/t/fip-82-governance-enhancements/3945/23) passes
+* master
+* admin
 
 Powers:
 * `TurboSafe.slurp`
@@ -91,16 +97,13 @@ Powers:
 * `TurboAdmin._setCollateralFactor`
 * `TurboAdmin._setLiquidationIncentive`
 * `TurboAdmin.schedule`
-       
-Owners:
-* fei dao timelock
-* turbo pod if [FIP-82](https://tribe.fei.money/t/fip-82-governance-enhancements/3945/23) passes
-* master
-* admin
 
 ### GUARDIAN_ROLE
 Pause and security Guardian role.
-   
+
+Holders:
+* Tribe Security Guardian
+
 Powers:
 * `TurboSafe.less`
 * `TurboBooster.setFreezeStatus`
@@ -115,11 +118,11 @@ Powers:
 * `TurboAdmin._setTransferPaused`
 * `TurboAdmin._setSeizePaused`
        
-Owners:
-* Tribe Security Guardian
-
 ### GOVERN_ROLE
 HIGH CLEARANCE. Capable of critical governance functionality on TurboAdmin such as oracle upgrades. 
+
+Holders:
+* Fei DAO Timelock
 
 Powers:
 * `TurboAdmin._setBorrowCapGuardian`
@@ -133,12 +136,12 @@ Powers:
 * `TurboAdmin.scheduleSetPendingAdmin`
 * `TurboAdmin.schedule`
 * `TurboAdmin.cancel`
-       
-Owners:
-* Fei DAO Timelock
 
 ### TURBO_STRATEGIST_ROLE
 Limited version of TURBO_ADMIN_ROLE which can manage collateral and vault parameters.
+
+Holders:
+* None initially
 
 Powers:
 * `TurboBooster.setBoostCapForVault`
@@ -146,6 +149,3 @@ Powers:
 * `TurboAdmin._setMarketSupplyCaps`
 * `TurboAdmin._setMarketSupplyCapsByUnderlying`
 * `TurboAdmin.addCollateral`
-       
-Owners:
-* None initially
