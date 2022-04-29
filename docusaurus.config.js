@@ -54,18 +54,15 @@ const config = {
             to: 'protocol/Overview'
           },
           {
+            label: 'Rari Capital',
+            href: 'https://docs.rari.capital/'
+          },
+          {
             type: 'doc',
             docId: 'Turbo/Overview',
             position: 'left',
             label: 'Turbo',
             to: 'Turbo/Overview'
-          },
-          {
-            type: 'doc',
-            docId: 'Flywheel/Overview',
-            position: 'left',
-            label: 'Flywheel',
-            to: 'Flywheel/Overview'
           },
           {
             type: 'doc',
@@ -75,16 +72,33 @@ const config = {
             to: 'Launch/Overview'
           },
           {
-            label: 'Rari Capital',
-            href: 'https://docs.rari.capital/'
-          },
-          {
-            label: 'Volt Protocol',
-            href: 'https://github.com/code-423n4/2022-03-volt/blob/main/SYSTEMARCHITECTURE.md'
-          },
-          {
-            label: 'Midas Capital',
-            href: 'https://twitter.com/MidasCapitalXYZ'
+            type: 'dropdown',
+            label: 'Ecosystem',
+            position: 'left',
+            items: [
+              {
+                label: 'Volt Protocol',
+                href: 'https://github.com/code-423n4/2022-03-volt/blob/main/SYSTEMARCHITECTURE.md'
+              },
+              {
+                label: 'Midas Capital',
+                href: 'https://twitter.com/MidasCapitalXYZ'
+              },
+              {
+                label: 'Check the Chain (ctc)',
+                href: 'https://ctc.readthedocs.io/en/latest/'
+              },
+              {
+                label: 'ERC4626',
+                href: 'https://github.com/fei-protocol/ERC4626'
+              },
+              {
+                type: 'doc',
+                docId: 'Flywheel/Overview',
+                label: 'Flywheel',
+                to: 'Flywheel/Overview'
+              },
+            ]
           },
           {
             href: 'https://github.com/fei-protocol',
