@@ -2,7 +2,7 @@
 sidebar_position: 5
 ---
 
-Fei Protocol needs to protect against malicious actors and attack that come in multiple categories. Fei follows modern security practices to firewall assets from each other as best as possible, so that exploits in one area don't affect others. We also use a variety of features to pre-emptively and retractively secure assets, such as the PCV Guardian and PCV Sentinel.
+Fei Protocol needs to protect against malicious actors and attacks that come in multiple categories. Fei follows modern security practices to firewall assets from each other as best as possible, so that exploits in one area don't affect others. We also use a variety of features to pre-emptively and retractively secure assets, such as the PCV Guardian and PCV Sentinel.
 
 ## Audits and Bug Bounties
 Fei Protocol code has been reviewed by top tier security researchers from 
