@@ -11,7 +11,7 @@ Fei Protocol code has been reviewed by top tier security researchers from
 - Code4rena
 - Spearbit
 
-The Tribe DAO ImmuneFi bug bounty offers huge rewards to whitehats for finding exploits and safely reporting them.
+The [Tribe DAO ImmuneFi bug bounty](https://immunefi.com/bounty/tribedao/) offers huge rewards to whitehats for finding exploits and safely reporting them.
 
 ## Modular Access Control Architecture
 Rather than using proxies for upgradeability, which is a pattern that is easy to misconfigure, the Tribe opts for heavily access controlled, modular architecture.
