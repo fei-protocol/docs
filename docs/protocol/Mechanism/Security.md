@@ -2,7 +2,7 @@
 sidebar_position: 5
 ---
 
-Fei Protocol needs to protect against malicious actors and attack that come in multiple categories. Fei follows modern security practices to firewall assets from each other as best as possible, so that exploits in one area don't affect others. We also use a variety of features to pre-emptively and retractively secure assets, such as the PCV Guardian and PCV Sentinel.
+Fei Protocol needs to protect against malicious actors and attacks that come in multiple categories. Fei follows modern security practices to firewall assets from each other as best as possible, so that exploits in one area don't affect others. We also use a variety of features to pre-emptively and retractively secure assets, such as the PCV Guardian and PCV Sentinel.
 
 ## Audits and Bug Bounties
 Fei Protocol code has been reviewed by top tier security researchers from 
@@ -11,7 +11,7 @@ Fei Protocol code has been reviewed by top tier security researchers from
 - Code4rena
 - Spearbit
 
-The Tribe DAO ImmuneFi bug bounty offers huge rewards to whitehats for finding exploits and safely reporting them.
+The [Tribe DAO ImmuneFi bug bounty](https://immunefi.com/bounty/tribedao/) offers huge rewards to whitehats for finding exploits and safely reporting them.
 
 ## Modular Access Control Architecture
 Rather than using proxies for upgradeability, which is a pattern that is easy to misconfigure, the Tribe opts for heavily access controlled, modular architecture.
@@ -21,9 +21,9 @@ This keeps components simple, and separates roles so issues in the system remain
 ## Guardian
 
 The Guardian can:
-* pause protocol functionality such as FEI minting and PCV movements
-* veto malicious governance proposals
-* revoke (but not add) roles in the system
+* Pause protocol functionality such as FEI minting and PCV movements
+* Veto malicious governance proposals
+* Revoke (but not add) roles in the system
 * Move PCV to "safe" approved addresses through the [PCV Guardian](https://github.com/fei-protocol/fei-protocol-core/blob/develop/contracts/pcv/PCVGuardian.sol) deployed [here](https://etherscan.io/address/0x2D1b1b509B6432A73e3d798572f0648f6453a5D9#code).
 
 ### PCV Guardian
@@ -38,6 +38,6 @@ Guards know how to check for issues, and what calldata to provide the Sentinel t
 The PCV Sentinel acts as automated extennsion of the Multisig Guardian by exposing guard calls to *any* address in the ecosystem.
 
 Planned guards include:
-- fuse oracle liquidity monitoring
-- psm liquidity monitoring (unpause eth psm when others are low)
-- pcv deposit monitoring (pull assets to safety if underlying deposit compromised)
+- Fuse oracle liquidity monitoring
+- PSM liquidity monitoring (unpause ETH PSM when others are low)
+- PCV deposit monitoring (pull assets to safety if underlying deposit compromised)
