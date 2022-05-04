@@ -16,10 +16,7 @@ GOVERN_ROLE is the admin of the following roles:
 ROLE_ADMIN is the admin of the following roles:
 
 - PARAMETER_ADMIN
-- MINOR_ROLE_ADMIN
-- MINTER_ADMIN
-- OPTIMISTIC_ADMIN
-- MINOR_PARAM_ROLE
+- RATE_LIMITED_MINTER_ADMIN
 - ORACLE_ADMIN_ROLE
 - TRIBAL_CHIEF_ADMIN_ROLE
 - PCV_GUARDIAN_ADMIN_ROLE
@@ -653,11 +650,18 @@ The burner role has been deprecated via RestrictedPermissions.
 
 ### FEI_MINT_ADMIN
 
-Currently unused.
+#### Holders
+
+- feiDAOTimelock
+- tribalCouncilTimelock
 
 ### FUSE_ADMIN
 
-Currently unused.
+#### Holders
+
+- tribalChiefSyncV2
+- tribalCouncilTimelock
+- optimisticTimelock
 
 ### METAGOVERNANCE_GAUGE_ADMIN
 
@@ -728,35 +732,7 @@ LiquidityGaugeManager.unstakeFromGauge
 - LiquidityGaugeManger.voteForGaugeWeight
 ```
 
-### MINOR_PARAM_ROLE
-
-#### Holders
-
-- None
-
-#### Admins
-
-- ROLE_ADMIN
-
-#### Powers
-
-- None
-
-### MINOR_ROLE_ADMIN
-
-#### Holders
-
-- None
-
-#### Admins
-
-- ROLE_ADMIN
-
-#### Powers
-
-- None
-
-### MINTER_ADMIN
+### RATE_LIMITED_MINTER_ADMIN
 
 #### Holders
 
@@ -809,20 +785,6 @@ LiquidityGaugeManager.unstakeFromGauge
 - NamedStaticPCVDepositWrapper.editDeposit
 ```
 
-### OPTIMISTIC_ADMIN
-
-#### Holders
-
-- None
-
-#### Admins
-
-- ROLE_ADMIN
-
-#### Powers
-
-- None
-
 ### PARAMETER_ADMIN
 
 #### Holders
@@ -861,11 +823,9 @@ LiquidityGaugeManager.unstakeFromGauge
 
 #### Holders
 
-- Core
 - FeiDAOTimelock
-- RoleBastion
 - OptimisticTimelock
-- OpsOptimisticTimelock
+- TribalCouncilTimelock
 
 #### Admins
 
@@ -874,6 +834,17 @@ LiquidityGaugeManager.unstakeFromGauge
 #### Powers
 
 - None
+
+### TOKEMAK_DEPOSIT_ADMIN_ROLE
+#### Holders
+
+- FeiDAOTimelock
+- OptimisticTimelock
+- TribalCouncilTimelock
+
+### RATE_LIMITED_MINTER_ADMIN
+
+Not currently used
 
 ### POD_ADMIN
 
