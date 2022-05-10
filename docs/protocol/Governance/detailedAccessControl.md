@@ -32,18 +32,10 @@ ROLE_ADMIN is the admin of the following roles:
 - POD_ADMIN
 - POD_VETO_ADMIN
 - POD_METADATA_REGISTER_ROLE
+- BALANCER_MANAGER_ADMIN_ROLE
 
-Needs categorization:
-
-- TRIBE_MINTER
-- TRIBE_MINTER_ADMIN
-- PROXY_ADMIN
-
-Created roles granted to no one:
-
+Deprecated Roles:
 - BURNER_ROLE
-- BALANCER_MANAGER_ADMIN_ROLE
-- BALANCER_MANAGER_ADMIN_ROLE
 
 ## Powers
 
@@ -621,19 +613,6 @@ CoreRef.unpause
 - TribalChief.resetRewards
 ```
 
-### ROLE_ADMIN
-
-#### Holders
-
-- FeiDaoTimelock
-- TribalCouncilTimelock
-
-#### Powers
-
-```
-- RoleBastion.createRole
-```
-
 ### BURNER_ROLE
 
 The burner role has been deprecated via RestrictedPermissions.
@@ -655,6 +634,14 @@ The burner role has been deprecated via RestrictedPermissions.
 - feiDAOTimelock
 - tribalCouncilTimelock
 
+#### Powers
+
+```
+FeiTimedMinter.setFrequency
+FeiTimedMinter.setMintAmount
+PCVEquityMinter.setAPRBasisPoints
+```
+
 ### FUSE_ADMIN
 
 #### Holders
@@ -662,6 +649,31 @@ The burner role has been deprecated via RestrictedPermissions.
 - tribalChiefSyncV2
 - tribalCouncilTimelock
 - optimisticTimelock
+
+#### Powers
+```
+FuseGuardian._setMarketSupplyCaps
+FuseGuardian._setMarketSupplyCapsByUnderlying
+FuseGuardian._setMarketBorrowCaps
+FuseGuardian._setMarketBorrowCapsByUnderlying
+FuseGuardian._setMintPausedByUnderlying
+FuseGuardian._setMintPaused
+FuseGuardian._setBorrowPausedByUnderlying
+FuseGuardian._setBorrowPaused
+FuseGuardian._setTransferPaused
+FuseGuardian._setSeizePaused
+FuseAdmin.oracleAdd
+FuseAdmin._addRewardsDistributor
+FuseAdmin._setWhitelistEnforcement
+FuseAdmin._setWhitelistStatuses
+FuseAdmin._setCloseFactor
+FuseAdmin._setCollateralFactor
+FuseAdmin._setLiquidationIncentive
+FuseAdmin._deployMarket
+FuseAdmin._unsupportMarket
+FuseAdmin._toggleAutoImplementations
+FuseAdmin._setPendingAdmin
+```
 
 ### METAGOVERNANCE_GAUGE_ADMIN
 
@@ -797,11 +809,17 @@ LiquidityGaugeManager.unstakeFromGauge
 
 #### Powers
 
+```
+NonCustodialPSM.setMintFee
+NonCustodialPSM.setRedeemFee
+```
+
 ### PCV_GUARDIAN_ADMIN_ROLE
 
 #### Holders
 
 - OptimisticTimelock
+- tribalCouncilTimelock
 
 #### Admins
 
@@ -833,7 +851,11 @@ LiquidityGaugeManager.unstakeFromGauge
 
 #### Powers
 
-- None
+```
+UniswapPCVDeposit.setMaxBasisPointsFromPegLP
+FeiSkimmer.setThreshold
+PCVDripController.setDripAmount
+```
 
 ### TOKEMAK_DEPOSIT_ADMIN_ROLE
 #### Holders
@@ -842,9 +864,15 @@ LiquidityGaugeManager.unstakeFromGauge
 - OptimisticTimelock
 - TribalCouncilTimelock
 
-### RATE_LIMITED_MINTER_ADMIN
+#### Admins
 
-Not currently used
+- ROLE_ADMIN
+
+#### Powers
+
+```
+TokemakPCVDepositBase.requestWithdrawal
+```
 
 ### POD_ADMIN
 
@@ -975,19 +1003,6 @@ Not currently used
 #### Powers
 
 ```
-- FuseGuardian._setMarketSupplyCaps
-- FuseGuardian._setMarketSupplyCapsByUnderlying
-- FuseGuardian._setMarketBorrowCaps
-- FuseGuardian._setMarketBorrowCapsByUnderlying
-- FuseGuardian._setMintPausedByUnderlying
-- FuseGuardian._setMintPaused
-- FuseGuardian._setBorrowPausedByUnderlying
-- FuseGuardian._setBorrowPaused
-- FuseGuardian._setTransferPaused
-- FuseGuardian._setSeizePaused
-```
-
-```
 - AutoRewardsDistributor.setRewardsDistributorAdmin
 ```
 
@@ -999,10 +1014,6 @@ Not currently used
 - RewardsDistributorAdmin._setContributorCompSpeed
 - RewardsDistributorAdmin._addMarket
 - RewardsDistributorAdmin.becomeAdmin
-```
-
-```
-- VotiumBriber.bribe
 ```
 
 ```
@@ -1026,4 +1037,6 @@ Not currently used
 
 #### Powers
 
-- None
+```
+VotiumBriber.bribe
+```
