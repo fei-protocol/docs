@@ -9,7 +9,7 @@ The Tribe DAO has various protocols and services in it's ecosystem. These includ
 - Fei Protocol: a decentralized stablecoin pegged to $1 USD
 - [Rari Capital Fuse](https://docs.rari.capital/): the open lending and interest rate protocol
 - Turbo: a FEI liquidity accelerator and yield sharing protocol
-- [Volt](https://www.voltprotocol.io/): an inflation protected stablecoin pegge to $1 USD
+- [Volt](https://www.voltprotocol.io/): an inflation protected stablecoin pegged to $1 USD
 - [Midas Capital](https://twitter.com/MidasCapitalXYZ): A multichain focused lending and interest rate protocol based on Fuse.
 
 In addition, the Tribe focuses on advancing open source infastructure for other projects to benefit from including:
