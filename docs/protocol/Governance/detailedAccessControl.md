@@ -32,10 +32,19 @@ ROLE_ADMIN is the admin of the following roles:
 - POD_ADMIN
 - POD_VETO_ADMIN
 - POD_METADATA_REGISTER_ROLE
-- BALANCER_MANAGER_ADMIN_ROLE
+- PCV_SAFE_MOVER_ROLE
 
-Deprecated Roles:
+Needs categorization:
+
+- TRIBE_MINTER
+- TRIBE_MINTER_ADMIN
+- PROXY_ADMIN
+
+Created roles granted to no one:
+
 - BURNER_ROLE
+- BALANCER_MANAGER_ADMIN_ROLE
+- BALANCER_MANAGER_ADMIN_ROLE
 
 ## Powers
 
@@ -613,6 +622,19 @@ CoreRef.unpause
 - TribalChief.resetRewards
 ```
 
+### ROLE_ADMIN
+
+#### Holders
+
+- FeiDaoTimelock
+- TribalCouncilTimelock
+
+#### Powers
+
+```
+- RoleBastion.createRole
+```
+
 ### BURNER_ROLE
 
 The burner role has been deprecated via RestrictedPermissions.
@@ -634,14 +656,6 @@ The burner role has been deprecated via RestrictedPermissions.
 - feiDAOTimelock
 - tribalCouncilTimelock
 
-#### Powers
-
-```
-FeiTimedMinter.setFrequency
-FeiTimedMinter.setMintAmount
-PCVEquityMinter.setAPRBasisPoints
-```
-
 ### FUSE_ADMIN
 
 #### Holders
@@ -649,31 +663,6 @@ PCVEquityMinter.setAPRBasisPoints
 - tribalChiefSyncV2
 - tribalCouncilTimelock
 - optimisticTimelock
-
-#### Powers
-```
-FuseGuardian._setMarketSupplyCaps
-FuseGuardian._setMarketSupplyCapsByUnderlying
-FuseGuardian._setMarketBorrowCaps
-FuseGuardian._setMarketBorrowCapsByUnderlying
-FuseGuardian._setMintPausedByUnderlying
-FuseGuardian._setMintPaused
-FuseGuardian._setBorrowPausedByUnderlying
-FuseGuardian._setBorrowPaused
-FuseGuardian._setTransferPaused
-FuseGuardian._setSeizePaused
-FuseAdmin.oracleAdd
-FuseAdmin._addRewardsDistributor
-FuseAdmin._setWhitelistEnforcement
-FuseAdmin._setWhitelistStatuses
-FuseAdmin._setCloseFactor
-FuseAdmin._setCollateralFactor
-FuseAdmin._setLiquidationIncentive
-FuseAdmin._deployMarket
-FuseAdmin._unsupportMarket
-FuseAdmin._toggleAutoImplementations
-FuseAdmin._setPendingAdmin
-```
 
 ### METAGOVERNANCE_GAUGE_ADMIN
 
@@ -809,17 +798,11 @@ LiquidityGaugeManager.unstakeFromGauge
 
 #### Powers
 
-```
-NonCustodialPSM.setMintFee
-NonCustodialPSM.setRedeemFee
-```
-
 ### PCV_GUARDIAN_ADMIN_ROLE
 
 #### Holders
 
 - OptimisticTimelock
-- tribalCouncilTimelock
 
 #### Admins
 
@@ -827,15 +810,7 @@ NonCustodialPSM.setRedeemFee
 
 #### Powers
 
-```
-- PCVGuardian.setSafeAddress
-- PCVGuardian.setSafeAddresses
-- PCVGuardian.unsetSafeAddress
-- PCVGuardian.unsetSafeAddresses
-- PCVGuardian.withdrawToSafeAddress
-- PCVGuardian.withdrawETHToSafeAddress
-- PCVGuardian.withdrawERC20ToSafeAddress
-```
+- None
 
 ### PCV_MINOR_PARAM_ROLE
 
@@ -851,28 +826,19 @@ NonCustodialPSM.setRedeemFee
 
 #### Powers
 
-```
-UniswapPCVDeposit.setMaxBasisPointsFromPegLP
-FeiSkimmer.setThreshold
-PCVDripController.setDripAmount
-```
+- None
 
 ### TOKEMAK_DEPOSIT_ADMIN_ROLE
+
 #### Holders
 
 - FeiDAOTimelock
 - OptimisticTimelock
 - TribalCouncilTimelock
 
-#### Admins
+### RATE_LIMITED_MINTER_ADMIN
 
-- ROLE_ADMIN
-
-#### Powers
-
-```
-TokemakPCVDepositBase.requestWithdrawal
-```
+Not currently used
 
 ### POD_ADMIN
 
@@ -917,6 +883,28 @@ TokemakPCVDepositBase.requestWithdrawal
 
 ```
 - GovernanceMetadataRegistry.registerProposal
+```
+
+### PCV_SAFE_MOVER_ROLE
+
+#### Holders
+
+- TribalCouncilTimelock
+
+#### Admins
+
+- ROLE_ADMIN
+
+#### Powers
+
+```
+- PCVGuardian.setSafeAddress
+- PCVGuardian.setSafeAddresses
+- PCVGuardian.unsetSafeAddress
+- PCVGuardian.unsetSafeAddresses
+- PCVGuardian.withdrawToSafeAddress
+- PCVGuardian.withdrawETHToSafeAddress
+- PCVGuardian.withdrawERC20ToSafeAddress
 ```
 
 ### POD_VETO_ADMIN
@@ -1003,6 +991,19 @@ TokemakPCVDepositBase.requestWithdrawal
 #### Powers
 
 ```
+- FuseGuardian._setMarketSupplyCaps
+- FuseGuardian._setMarketSupplyCapsByUnderlying
+- FuseGuardian._setMarketBorrowCaps
+- FuseGuardian._setMarketBorrowCapsByUnderlying
+- FuseGuardian._setMintPausedByUnderlying
+- FuseGuardian._setMintPaused
+- FuseGuardian._setBorrowPausedByUnderlying
+- FuseGuardian._setBorrowPaused
+- FuseGuardian._setTransferPaused
+- FuseGuardian._setSeizePaused
+```
+
+```
 - AutoRewardsDistributor.setRewardsDistributorAdmin
 ```
 
@@ -1014,6 +1015,10 @@ TokemakPCVDepositBase.requestWithdrawal
 - RewardsDistributorAdmin._setContributorCompSpeed
 - RewardsDistributorAdmin._addMarket
 - RewardsDistributorAdmin.becomeAdmin
+```
+
+```
+- VotiumBriber.bribe
 ```
 
 ```
@@ -1037,6 +1042,4 @@ TokemakPCVDepositBase.requestWithdrawal
 
 #### Powers
 
-```
-VotiumBriber.bribe
-```
+- None
