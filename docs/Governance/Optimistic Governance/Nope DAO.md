@@ -2,7 +2,7 @@
 sidebar_position: 3
 ---
 
-The NopeDAO is a sub-DAO that is able to veto and cancel any pod proposal. Any community member can create a veto proposal (there is no minimum threshold) and when 10M Tribe votes in favour, the proposal will be immediately cancelled. 
+The NopeDAO is a sub-DAO that is able to veto and cancel any pod proposal. Any community member can create a veto proposal (there is no minimum threshold) and when 10M Tribe votes in favour, the pod proposal will be immediately cancelled. 
 
 If a proposal is vetoed by the NopeDAO, it is expected that if the proposal is to be re-attempted then it should go to a full DAO vote.
 

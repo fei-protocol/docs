@@ -1,7 +1,7 @@
 ---
 sidebar_position: 4
 ---
-There are 5 steps involved for a pod member to create a pod proposal:
+There are 4 steps involved for a pod member to create a pod proposal:
 
 **1.  Pod member creates the proposal on the pod Gnosis Safe**
 - A user on a pod multisig creates a transaction on the multisig

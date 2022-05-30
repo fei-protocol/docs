@@ -1,10 +1,10 @@
 ---
 sidebar_position: 2
 ---
-The Tribe DAO has ultimate control over the Tribe ecosystem. It has the highest level access control roles, including amongst others:
+The Tribe DAO has ultimate control over the Tribe ecosystem. It has the highest level access control roles, including:
 - Arbitrarily moving PCV
 - Minting FEI
-- Create and grant new access roles
+- Creating and granting new access roles
 
 The Tribe DAO is controlled by Tribe token holders and in order to perform an action it requires a proposal to be created and passed. The proposal threshold is 2.5M TRIBE, with quorum being 25M TRIBE.
 

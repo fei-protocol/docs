@@ -4,7 +4,7 @@ sidebar_position: 2
 
 Pods are hierarchical in nature. The most powerful pod is the Tribal Council and it is composed of community members and protocol experts who were elected in a Snapshot vote and instated by a subsequent DAO vote: https://www.tally.xyz/governance/eip155:1:0x0BEF27FEB58e857046d630B2c03dFb7bae567494/proposal/98075113212382060992713108948893946030462273453147378810955243825368262837097. 
 
-The Tribal Council is able govern the protocol on an operational day to day basis and has several significant roles to allow it to do that. These roles are documented in the `AccessControl.md` part of these docs. 
+The Tribal Council is able govern the protocol on an operational day to day basis and has several significant roles to allow it to do that. These roles are documented in the `AccessControl.md` part of these docs.
 
 The Tribal Council is implemented as a 5 of 9 multisig with a 4 day timelock. The following 9 members were elected:
 
@@ -23,4 +23,8 @@ The Tribal Council is implemented as a 5 of 9 multisig with a 4 day timelock. Th
 A read-only UI for the Tribal Council is available at: https://tribecouncil.pod.xyz/.
 
 ### Further pods
-The Tribal Council is able to create additional pods and authorise those pods with the powers necessary to govern a specific part of the protocol. When doing so, it is able to determine the pod membership and timelock delay duration.
+The Tribal Council is able to deploy additional pods and authorise those pods with the powers necessary to govern a specific part of the protocol. When doing so, it is able to determine the pod membership and timelock delay duration.
+
+It has admin repsonsibilities over those pods it creates and, amongst other powers, is able to:
+- Add pod members
+- Remove pod members

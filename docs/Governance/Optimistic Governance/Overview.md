@@ -9,4 +9,5 @@ Pods can be thought of as working groups tasked with managing specific parts of 
 
 Each proposal a pod passes must go through the timelock - it is the timelock of the pod that has the relevant access control roles to interact with the protocol. 
 
-There is an important counterbalance to the optimistic nature of pods. If the community determines that a proposal passed by a pod should not be actioned, they are able to veto the proposal via a sub-dao called the NopeDAO. The NopeDAO is able to veto and cancel any action a pod proposes, with a low threshold of 10M Tribe. 
+### Nope DAO
+There is an important counterbalance to the optimistic nature of pods. If the community determines that a proposal passed by a pod should not be actioned, they are able to veto the proposal via a sub-dao called the NopeDAO. The NopeDAO is able to veto and cancel any action a pod proposes, with a low threshold for veto of 10M Tribe. 
