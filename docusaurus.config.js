@@ -72,6 +72,13 @@ const config = {
             to: 'Launch/Overview'
           },
           {
+            type: 'doc',
+            docId: 'Governance/Overview',
+            position: 'left',
+            label: 'Governance',
+            to: 'Governance/Overview'
+          },
+          {
             type: 'dropdown',
             label: 'Ecosystem',
             position: 'left',
