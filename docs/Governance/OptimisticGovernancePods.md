@@ -29,5 +29,8 @@ The Tribal Council is implemented as a 5 of 9 multisig with a 4 day timelock. Th
 
 A read-only UI for the Tribal Council is available at: https://tribecouncil.pod.xyz/ 
 
+### Further pods
+The Tribal Council is able to create additional pods and authorise those pods with the powers necessary to govern a specific part of the protocol. When doing so, it is able to determine the pod membership and timelock delay duration.
+
 ## NopeDAO
 The NopeDAO is a sub-DAO that is able to veto any pod proposal. A community member would create a veto proposal and 10M Tribe would vote in favour in order to cancel the proposal. It is available at: https://www.tally.xyz/governance/eip155:1:0x6C7aF43Ce97686e0C8AcbBc03b2E4f313c0394C7 
