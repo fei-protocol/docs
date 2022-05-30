@@ -1,3 +1,6 @@
+---
+sidebar_position: 1
+---
 # Overview
 
 The Tribe ecosystem makes use of an optimistic governance model which has four layers:

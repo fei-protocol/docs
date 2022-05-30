@@ -1,4 +1,6 @@
-## Tribe DAO
+---
+sidebar_position: 2
+---
 The Tribe DAO has ultimate control over the Tribe ecosystem. It has the highest level access control roles, including amongst others:
 - Arbitrarily moving PCV
 - Minting FEI

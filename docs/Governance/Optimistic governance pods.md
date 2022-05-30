@@ -1,4 +1,7 @@
-# Governance pods
+---
+sidebar_position: 3
+---
+
 The governance pods are the core of the optimistic governance process within the Tribe ecosystem. They are the primary way in which the protocol is managed on an operational day to day basis. Most proposals do not require a full expensive DAO vote, and instead they can be approved in an optimistic fashion via a pod.
 
 ## What is a governance pod
