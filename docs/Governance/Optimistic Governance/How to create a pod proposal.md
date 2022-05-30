@@ -1,5 +1,5 @@
 ---
-sidebar_position: 5
+sidebar_position: 2
 ---
 There are 5 steps involved for a pod member to create a pod proposal:
 
