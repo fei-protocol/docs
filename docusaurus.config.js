@@ -10,7 +10,7 @@ const config = {
   tagline: `
   Tribe DAO is a community and ecosystem of decentralised finance protocols and products`,
   url: 'https://your-docusaurus-test-site.com',
-  baseUrl: '/docs/',
+  baseUrl: '/',
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/Tribe.png',
