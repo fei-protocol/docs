@@ -22,4 +22,4 @@ They were elected in a Snapshot vote (https://snapshot.fei.money/#/proposal/0x00
 
 **2. What is the difference between a veto and a proposal cancellation by the Nope DAO?**
 
-A veto and Nope DAO cancellation are the same thing. The Nope DAO is the mechanism by which the Nope DAO vetos a pod proposal in a timelock.
+A veto and Nope DAO cancellation are the same thing. The Nope DAO is the mechanism by which the community vetos a pod proposal in a timelock.
