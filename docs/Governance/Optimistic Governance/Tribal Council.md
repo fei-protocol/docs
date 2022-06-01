@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-Pods are hierarchical in nature. The most powerful pod is the Tribal Council and it is composed of community members and protocol experts who were elected in a Snapshot vote and instated by a subsequent DAO vote: https://www.tally.xyz/governance/eip155:1:0x0BEF27FEB58e857046d630B2c03dFb7bae567494/proposal/98075113212382060992713108948893946030462273453147378810955243825368262837097. 
+Pods are hierarchical in nature. The most powerful pod is the Tribal Council and it is composed of community members and protocol experts who were elected in a Snapshot vote (https://snapshot.fei.money/#/proposal/0x003adc2cb0f13784645e31440d24d0364817085aa1994e1ad72944d11bedb528) and instated by a subsequent DAO vote: https://www.tally.xyz/governance/eip155:1:0x0BEF27FEB58e857046d630B2c03dFb7bae567494/proposal/98075113212382060992713108948893946030462273453147378810955243825368262837097. 
 
 The Tribal Council is able govern the protocol on an operational day to day basis and has several significant roles to allow it to do that. These roles are documented in the `AccessControl.md` part of these docs.
 

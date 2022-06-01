@@ -11,7 +11,7 @@ The Tribe ecosystem makes use of an optimistic governance model which has four l
 **2. Optimistic governance pods**
 - Working groups of community members and protocol experts sitting on a Gnosis safe connected to a timelock. Able to optimistically govern specific parts of the protocol.
 
-**3. NopeDAO** 
+**3. Nope DAO** 
 - A sub-DAO with a low quorum that is specifically able to veto governance pod proposals.
 
 **4. Guardian**

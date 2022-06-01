@@ -18,8 +18,8 @@ The Tribal Council members are 9 protocol operators and community members:
 0x7671f0615B1764fb4bf4b8dF06B7338843f99678 - Freddie Farmer
 ```
 
-They were elected in a Snapshot vote and ratified as part of a DAO vote.
+They were elected in a Snapshot vote (https://snapshot.fei.money/#/proposal/0x003adc2cb0f13784645e31440d24d0364817085aa1994e1ad72944d11bedb528) and ratified as part of a DAO vote (https://www.tally.xyz/governance/eip155:1:0x0BEF27FEB58e857046d630B2c03dFb7bae567494/proposal/98075113212382060992713108948893946030462273453147378810955243825368262837097).
 
-**2. What is the difference between a veto and a proposal cancellation by the NopeDAO?**
+**2. What is the difference between a veto and a proposal cancellation by the Nope DAO?**
 
-A veto and nopeDAO cancellation are the same thing. The NopeDAO is the mechanism by which the NopeDAO vetos a pod proposal in a timelock.
+A veto and Nope DAO cancellation are the same thing. The Nope DAO is the mechanism by which the Nope DAO vetos a pod proposal in a timelock.

@@ -411,10 +411,10 @@ The ultimate power in the Tribe DAO.
 ```
 
 ```
-- NopeDAO.setVotingDelay
-- NopeDAO.setVotingPeriod
-- NopeDAO.setProposalThreshold
-- NopeDAO.setQuorum
+- Nope DAO.setVotingDelay
+- Nope DAO.setVotingPeriod
+- Nope DAO.setProposalThreshold
+- Nope DAO.setQuorum
 ```
 
 ```
@@ -965,7 +965,7 @@ Not currently used
 
 #### Holders
 
-- NopeDAO
+- Nope DAO
 
 #### Admins
 
