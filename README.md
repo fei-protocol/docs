@@ -1,8 +1,16 @@
-Deployed at: https://fei-protocol.github.io/docs/
+# Tribe DAO Docs
 
-# Website
+This repo contains [documentation for Tribe DAO projects](https://docs.tribedao.xyz).
 
-This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
+Deployed at: https://docs.tribedao.xyz
+
+The docs are built using [Docusaurus 2](https://docusaurus.io/).
+
+### TL;DR
+
+1. Make changes to the `gh-pages` branch (ideally by branching and raising a PR)
+2. Commit and push
+3. Run `yarn deploy`
 
 ### Installation
 
@@ -28,16 +36,12 @@ This command generates static content into the `build` directory and can be serv
 
 ### Deployment
 
-Using SSH:
+Changes are read from `gh-pages` and the site is rebuilt upon deploy:
 
 ```
-$ USE_SSH=true yarn deploy
+$ yarn deploy
 ```
 
-Not using SSH:
+The deploy script will build your local version of the code and push it to the `master` branch.
 
-```
-$ GIT_USER=<Your GitHub username> yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+Github Pages will then serve whatever is in `master`.
