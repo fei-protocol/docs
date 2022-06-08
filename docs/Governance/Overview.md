@@ -28,6 +28,10 @@ When a Tribal Council proposal is veto'd, the proposal must instead pass through
 
 It is important to note that a Nope DAO veto does not act as a terminal end to a proposal. It just means that the proposal is controversial and should not go through the "express lane". Instead, it has to go through a full DAO vote.
 
+# Architecture
+The interactions between the governance system are summarised below:
+![Governance Architecture](GovArch.png)
+
 ## Get involved
 1. View Tribe DAO governance proposals: https://tribedao.xyz/governance
 2. Propose and vote on Tribe DAO proposals: https://www.tally.xyz/governance/eip155:1:0x0BEF27FEB58e857046d630B2c03dFb7bae567494 
