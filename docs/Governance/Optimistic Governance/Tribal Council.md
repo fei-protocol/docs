@@ -22,6 +22,8 @@ The Tribal Council is implemented as a 5 of 9 multisig with a 4 day timelock. Th
 
 A read-only UI for the Tribal Council is available at: https://tribecouncil.pod.xyz/.
 
+The ID of the Tribal Council pod, which can be used to Nope, Tribal Council proposals is `25`.
+
 ### Further pods
 The Tribal Council is able to deploy additional pods and authorise those pods with the powers necessary to govern a specific part of the protocol. When doing so, it is able to determine the pod membership and timelock delay duration.
 
