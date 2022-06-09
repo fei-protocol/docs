@@ -24,7 +24,7 @@ The following pages contain detailed information on these different components o
 ## Role of the Tribal Council and NopeDAO
 The Tribal Council can be thought of as an "express lane" for non-controversial proposals to pass on-chain in a low friction manner. There are checks and balances to this, in that there is a Nope DAO which is able to veto any proposal the community finds controversial. 
 
-When a Tribal Council proposal is veto'd, the proposal must instead pass through the standard governance channels of a full DAO vote in order to enacted on-chain. 
+When a Tribal Council proposal is vetoed, the proposal must instead pass through the standard governance channels of a full DAO vote in order to be enacted on-chain. 
 
 It is important to note that a Nope DAO veto does not act as a terminal end to a proposal. It just means that the proposal is controversial and should not go through the "express lane". Instead, it has to go through a full DAO vote.
 
