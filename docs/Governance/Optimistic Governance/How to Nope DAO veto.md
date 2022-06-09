@@ -6,7 +6,7 @@ To directly create a Nope DAO veto on-chain follow these 3 steps:
 
 **1. Fetch the timelock ID of the pod proposal that should be vetoed**
 - This can be found on:
-    - The https://tribe.fei.money governance post that was created when the proposal was made
+    - The https://tribe.fei.money governance post where the proposal was initiated
     - The open source timelock proposal viewing tool, [Fei-Tools](https://fei-tools.com/#/TimelockTransactions)
 - In the near future, the timelockID will also be available on the [Governance Dashboard](https://tribedao.xyz/governance)
 
