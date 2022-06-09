@@ -26,6 +26,7 @@ A read-only UI for the Tribal Council is available at: https://tribecouncil.pod.
 
 The ID of the Tribal Council pod, which can be used to Nope, Tribal Council proposals is `25`.
 
+Any on-chain changes made by the Tribal Council are placed in a 96-hour timelock. During this period, any proposal [can be vetoed by the DAO](/docs/Governance/Optimistic Governance/How to Nope DAO veto.md).
 ### Further pods
 The Tribal Council is able to deploy additional pods and authorise those pods with the powers necessary to govern a specific part of the protocol. When doing so, it is able to determine the pod membership and timelock delay duration.
 
