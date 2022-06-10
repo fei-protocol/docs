@@ -26,7 +26,7 @@ They were elected in a Snapshot vote (https://snapshot.fei.money/#/proposal/0x00
 
 25
 
-All existing pods and their associated identifiers can be found [here](docs/Governance/Optimistic%20Governance/Individual%20pods%20and%20IDs.md)
+All existing pods and their associated identifiers can be found [here](Optimistic%20Governance/Individual%20pods%20and%20IDs.md)
 
 
 ## Nope DAO
